@@ -33,7 +33,9 @@ public final class NotchKitWindow: UIWindow {
     ///
     /// When this property's value is false, black bars and curved corners are
     /// shown on all devices
-    public var shouldShowBarsOnlyOniPhoneX = true {
+    ///
+    /// The default value of this property is `false`
+    public var shouldShowBarsOnlyOniPhoneX = false {
         didSet { layoutSubviews() }
     }
     
@@ -178,7 +180,7 @@ public final class NotchKitWindow: UIWindow {
                 
             case .standard:
                 if screen.isiPhoneX {
-                    return 44
+                    return 22
                 } else {
                     return 8
                 }
