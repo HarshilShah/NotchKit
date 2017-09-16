@@ -14,7 +14,6 @@ extension CGRect {
     /// **Important: Values are assumed to be in UIKit's coordinate system i.e.
     /// with the origin at the top-left**
     func getCorner(_ corner: Corner) -> CGPoint {
-        let rect = CGRect(withCorner: corner, at: .zero, size: .zero)
         switch corner {
         case .topLeft: return CGPoint(x: minX, y: minY)
         case .topRight: return CGPoint(x: maxX, y: minY)
