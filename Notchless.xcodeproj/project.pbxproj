@@ -15,6 +15,7 @@
 		E8D0675E1F6D297A003B4E5D /* CGRect+InitWithCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D0675D1F6D297A003B4E5D /* CGRect+InitWithCorners.swift */; };
 		E8D067601F6D2991003B4E5D /* CGRect+Insets.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D0675F1F6D2991003B4E5D /* CGRect+Insets.swift */; };
 		E8D067631F6D2A1F003B4E5D /* CornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D067621F6D2A1F003B4E5D /* CornerView.swift */; };
+		E8D067651F6D2CA0003B4E5D /* NotchlessWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D067641F6D2CA0003B4E5D /* NotchlessWindow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		E8D0675D1F6D297A003B4E5D /* CGRect+InitWithCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+InitWithCorners.swift"; sourceTree = "<group>"; };
 		E8D0675F1F6D2991003B4E5D /* CGRect+Insets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Insets.swift"; sourceTree = "<group>"; };
 		E8D067621F6D2A1F003B4E5D /* CornerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerView.swift; sourceTree = "<group>"; };
+		E8D067641F6D2CA0003B4E5D /* NotchlessWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchlessWindow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 		28F828971C494B4200330CF4 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				E8D067641F6D2CA0003B4E5D /* NotchlessWindow.swift */,
 				E8D067621F6D2A1F003B4E5D /* CornerView.swift */,
 				E8D0675A1F6D2939003B4E5D /* Types */,
 				E8D067611F6D29A5003B4E5D /* Extensions */,
@@ -229,6 +232,7 @@
 				E8D067631F6D2A1F003B4E5D /* CornerView.swift in Sources */,
 				E8D0675E1F6D297A003B4E5D /* CGRect+InitWithCorners.swift in Sources */,
 				E8D0675C1F6D295D003B4E5D /* CGRect+Corners.swift in Sources */,
+				E8D067651F6D2CA0003B4E5D /* NotchlessWindow.swift in Sources */,
 				E8D067591F6D2927003B4E5D /* Corner.swift in Sources */,
 				E8D067601F6D2991003B4E5D /* CGRect+Insets.swift in Sources */,
 			);
