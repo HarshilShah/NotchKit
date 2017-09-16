@@ -12,6 +12,7 @@
 		28F828D21C4B714D00330CF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F828D11C4B714D00330CF4 /* ViewController.swift */; };
 		28F828D71C4B714D00330CF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28F828D61C4B714D00330CF4 /* Assets.xcassets */; };
 		28F828DA1C4B714D00330CF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28F828D81C4B714D00330CF4 /* LaunchScreen.storyboard */; };
+		E8D0676A1F6D3F3D003B4E5D /* Notchless.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8D0676B1F6D3F3D003B4E5D /* Notchless.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		28F828DB1C4B714D00330CF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28F828E01C4B714D00330CF4 /* NotchlessExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotchlessExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28F828E61C4B714D00330CF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8D0676B1F6D3F3D003B4E5D /* Notchless.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Notchless.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8D0676A1F6D3F3D003B4E5D /* Notchless.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +76,7 @@
 				28F828CE1C4B714D00330CF4 /* Sources */,
 				28F828E31C4B714D00330CF4 /* Tests */,
 				28F828CD1C4B714D00330CF4 /* Products */,
+				E8D067691F6D3F3D003B4E5D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,6 +108,14 @@
 				287D0A711C4B7877004566D6 /* NotchlessExampleUITests.swift */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		E8D067691F6D3F3D003B4E5D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E8D0676B1F6D3F3D003B4E5D /* Notchless.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
