@@ -16,9 +16,4 @@ class ViewController: UIViewController {
         view.backgroundColor = .blue
     }
 
-    override func viewSafeAreaInsetsDidChange() {
-        super.viewSafeAreaInsetsDidChange()
-        (view.window as? NotchlessWindow)?.setSafeAreaInsets(view.safeAreaInsets)
-    }
-
 }

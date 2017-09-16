@@ -21,7 +21,15 @@ public final class NotchlessWindow: UIWindow {
         didSet { updateCornerRadii() }
     }
     
+    public override var rootViewController: UIViewController? {
+        didSet {
+            updateRootViewController(from: oldValue, to: rootViewController)
+        }
+    }
+    
     // MARK:- Private variables
+    
+    private let safeAreaInsetsKeyPath = "safeAreaInsets"
     
     private let safeView = UIView()
     
@@ -117,6 +125,10 @@ public final class NotchlessWindow: UIWindow {
         ])
     }
     
+    deinit {
+        updateRootViewController(from: rootViewController, to: nil)
+    }
+    
     // MARK:- UIView methods
     
     public override func layoutSubviews() {
@@ -125,22 +137,17 @@ public final class NotchlessWindow: UIWindow {
         updateCornerRadii()
     }
     
-    // MARK:- Public methods
+    // MARK:- Key value observation
     
-    /// Sets the insets for the window
-    ///
-    /// This method is required because while on iPhone X the window's safeArea
-    /// is adjusted to accomodate for the notch, and thus for the status bar by
-    /// proxy, on older iPhones windows aren't updated for the status bar, and
-    /// there is no way to be notified that the insets have even changed to
-    /// trigger a manual check and update
-    ///
-    /// - Parameter insets: An object representing your view controller's
-    ///   new `safeAreaInsets`
-    public func setSafeAreaInsets(_ insets: UIEdgeInsets) {
-        UIView.animate(withDuration: 0.1) { [unowned self] in
-            self.safeView.frame = self.bounds.insetBy(insets: insets)
+    public override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+        guard keyPath == safeAreaInsetsKeyPath,
+              let view = object as? UIView,
+              view.isEqual(rootViewController?.view)
+        else {
+            return
         }
+        
+        setSafeAreaInsets(view.safeAreaInsets)
     }
     
     // MARK:- Private methods
@@ -167,6 +174,22 @@ public final class NotchlessWindow: UIWindow {
         
         cornerViews.forEach {
             $0.cornerRadius = newCornerRadius
+        }
+    }
+    
+    private func setSafeAreaInsets(_ insets: UIEdgeInsets) {
+        UIView.animate(withDuration: 0.1) { [unowned self] in
+            self.safeView.frame = self.bounds.insetBy(insets: insets)
+        }
+    }
+    
+    private func updateRootViewController(from oldValue: UIViewController?, to newValue: UIViewController?) {
+        if let oldValue = oldValue {
+            oldValue.view.removeObserver(self, forKeyPath: safeAreaInsetsKeyPath)
+        }
+        
+        if let newValue = newValue {
+            newValue.view.addObserver(self, forKeyPath: safeAreaInsetsKeyPath, options: [.initial], context: nil)
         }
     }
     
