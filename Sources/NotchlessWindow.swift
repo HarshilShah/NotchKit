@@ -3,16 +3,21 @@
 //  Notchless
 //
 //  Created by Harshil Shah on 16/09/17.
+//  Copyright © 2017 Harshil Shah. All rights reserved.
 //
 
 import UIKit
 
 public final class NotchlessWindow: UIWindow {
     
+    // MARK:- Types
+    
     public enum CornerRadius {
         case standard
         case custom(CGFloat)
     }
+    
+    // MARK:- Public variables
     
     /// The corner radius for the rounded view. It can be set to a custom value,
     /// or to use the standard value which sets the corner radius appropriately
@@ -154,13 +159,11 @@ public final class NotchlessWindow: UIWindow {
     
     private func updateCornerRadii() {
         let newCornerRadius: CGFloat = {
+            
             switch cornerRadius {
                 
             case .standard:
-                /// iPhone X gets a larger corner radius by default. There are
-                /// probably better ways to check this, but this works for now
-                /// and also doesn't trigger for split-view iPads, so why not
-                if screen.nativeBounds.height == 2436 && screen.nativeBounds.width == 1125 {
+                if screen.isiPhoneX {
                     return 44
                 } else {
                     return 8
