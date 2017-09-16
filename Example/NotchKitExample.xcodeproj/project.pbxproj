@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		287D0A721C4B7877004566D6 /* NotchlessExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287D0A711C4B7877004566D6 /* NotchlessExampleUITests.swift */; };
+		287D0A721C4B7877004566D6 /* NotchKitExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287D0A711C4B7877004566D6 /* NotchKitExampleUITests.swift */; };
 		28F828D01C4B714D00330CF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F828CF1C4B714D00330CF4 /* AppDelegate.swift */; };
 		28F828D21C4B714D00330CF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F828D11C4B714D00330CF4 /* ViewController.swift */; };
 		28F828D71C4B714D00330CF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28F828D61C4B714D00330CF4 /* Assets.xcassets */; };
 		28F828DA1C4B714D00330CF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28F828D81C4B714D00330CF4 /* LaunchScreen.storyboard */; };
-		E8D0676A1F6D3F3D003B4E5D /* Notchless.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8D0676B1F6D3F3D003B4E5D /* Notchless.framework */; };
+		E8D0676A1F6D3F3D003B4E5D /* NotchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8D0676B1F6D3F3D003B4E5D /* NotchKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -21,7 +21,7 @@
 			containerPortal = 28F828C41C4B714D00330CF4 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 28F828CB1C4B714D00330CF4;
-			remoteInfo = NotchlessExample;
+			remoteInfo = NotchKitExample;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -39,16 +39,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		287D0A711C4B7877004566D6 /* NotchlessExampleUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotchlessExampleUITests.swift; sourceTree = "<group>"; };
-		28F828CC1C4B714D00330CF4 /* NotchlessExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotchlessExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		287D0A711C4B7877004566D6 /* NotchKitExampleUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotchKitExampleUITests.swift; sourceTree = "<group>"; };
+		28F828CC1C4B714D00330CF4 /* NotchKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotchKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28F828CF1C4B714D00330CF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28F828D11C4B714D00330CF4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		28F828D61C4B714D00330CF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28F828D91C4B714D00330CF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28F828DB1C4B714D00330CF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		28F828E01C4B714D00330CF4 /* NotchlessExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotchlessExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		28F828E01C4B714D00330CF4 /* NotchKitExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotchKitExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28F828E61C4B714D00330CF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E8D0676B1F6D3F3D003B4E5D /* Notchless.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Notchless.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8D0676B1F6D3F3D003B4E5D /* NotchKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NotchKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8D0676A1F6D3F3D003B4E5D /* Notchless.framework in Frameworks */,
+				E8D0676A1F6D3F3D003B4E5D /* NotchKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,8 +83,8 @@
 		28F828CD1C4B714D00330CF4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				28F828CC1C4B714D00330CF4 /* NotchlessExample.app */,
-				28F828E01C4B714D00330CF4 /* NotchlessExampleUITests.xctest */,
+				28F828CC1C4B714D00330CF4 /* NotchKitExample.app */,
+				28F828E01C4B714D00330CF4 /* NotchKitExampleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -105,7 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				28F828E61C4B714D00330CF4 /* Info.plist */,
-				287D0A711C4B7877004566D6 /* NotchlessExampleUITests.swift */,
+				287D0A711C4B7877004566D6 /* NotchKitExampleUITests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -113,7 +113,7 @@
 		E8D067691F6D3F3D003B4E5D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E8D0676B1F6D3F3D003B4E5D /* Notchless.framework */,
+				E8D0676B1F6D3F3D003B4E5D /* NotchKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -121,9 +121,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		28F828CB1C4B714D00330CF4 /* NotchlessExample */ = {
+		28F828CB1C4B714D00330CF4 /* NotchKitExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 28F828E91C4B714D00330CF4 /* Build configuration list for PBXNativeTarget "NotchlessExample" */;
+			buildConfigurationList = 28F828E91C4B714D00330CF4 /* Build configuration list for PBXNativeTarget "NotchKitExample" */;
 			buildPhases = (
 				28F828C81C4B714D00330CF4 /* Sources */,
 				28F828C91C4B714D00330CF4 /* Frameworks */,
@@ -134,14 +134,14 @@
 			);
 			dependencies = (
 			);
-			name = NotchlessExample;
-			productName = NotchlessExample;
-			productReference = 28F828CC1C4B714D00330CF4 /* NotchlessExample.app */;
+			name = NotchKitExample;
+			productName = NotchKitExample;
+			productReference = 28F828CC1C4B714D00330CF4 /* NotchKitExample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		28F828DF1C4B714D00330CF4 /* NotchlessExampleUITests */ = {
+		28F828DF1C4B714D00330CF4 /* NotchKitExampleUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 28F828EC1C4B714D00330CF4 /* Build configuration list for PBXNativeTarget "NotchlessExampleUITests" */;
+			buildConfigurationList = 28F828EC1C4B714D00330CF4 /* Build configuration list for PBXNativeTarget "NotchKitExampleUITests" */;
 			buildPhases = (
 				28F828DC1C4B714D00330CF4 /* Sources */,
 				28F828DD1C4B714D00330CF4 /* Frameworks */,
@@ -152,9 +152,9 @@
 			dependencies = (
 				28F828E21C4B714D00330CF4 /* PBXTargetDependency */,
 			);
-			name = NotchlessExampleUITests;
-			productName = NotchlessExampleUITests;
-			productReference = 28F828E01C4B714D00330CF4 /* NotchlessExampleUITests.xctest */;
+			name = NotchKitExampleUITests;
+			productName = NotchKitExampleUITests;
+			productReference = 28F828E01C4B714D00330CF4 /* NotchKitExampleUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -178,7 +178,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 28F828C71C4B714D00330CF4 /* Build configuration list for PBXProject "NotchlessExample" */;
+			buildConfigurationList = 28F828C71C4B714D00330CF4 /* Build configuration list for PBXProject "NotchKitExample" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -191,8 +191,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				28F828CB1C4B714D00330CF4 /* NotchlessExample */,
-				28F828DF1C4B714D00330CF4 /* NotchlessExampleUITests */,
+				28F828CB1C4B714D00330CF4 /* NotchKitExample */,
+				28F828DF1C4B714D00330CF4 /* NotchKitExampleUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -230,7 +230,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				287D0A721C4B7877004566D6 /* NotchlessExampleUITests.swift in Sources */,
+				287D0A721C4B7877004566D6 /* NotchKitExampleUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,7 +239,7 @@
 /* Begin PBXTargetDependency section */
 		28F828E21C4B714D00330CF4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 28F828CB1C4B714D00330CF4 /* NotchlessExample */;
+			target = 28F828CB1C4B714D00330CF4 /* NotchKitExample */;
 			targetProxy = 28F828E11C4B714D00330CF4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -350,7 +350,7 @@
 				DEVELOPMENT_TEAM = BM5Y87HJ2F;
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.harshilshah.NotchlessExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.harshilshah.NotchKitExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -365,7 +365,7 @@
 				DEVELOPMENT_TEAM = BM5Y87HJ2F;
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.harshilshah.NotchlessExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.harshilshah.NotchKitExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -376,13 +376,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				INFOPLIST_FILE = Example/NotchlessExampleUITests/Info.plist;
+				INFOPLIST_FILE = Example/NotchKitExampleUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.harshilshah.NotchlessExampleUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.harshilshah.NotchKitExampleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = NotchlessExample;
+				TEST_TARGET_NAME = NotchKitExample;
 				USES_XCTRUNNER = YES;
 			};
 			name = Debug;
@@ -391,9 +391,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				INFOPLIST_FILE = Example/NotchlessExampleUITests/Info.plist;
+				INFOPLIST_FILE = Example/NotchKitExampleUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.harshilshah.NotchlessExampleUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.harshilshah.NotchKitExampleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = Example;
@@ -404,7 +404,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		28F828C71C4B714D00330CF4 /* Build configuration list for PBXProject "NotchlessExample" */ = {
+		28F828C71C4B714D00330CF4 /* Build configuration list for PBXProject "NotchKitExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				28F828E71C4B714D00330CF4 /* Debug */,
@@ -413,7 +413,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		28F828E91C4B714D00330CF4 /* Build configuration list for PBXNativeTarget "NotchlessExample" */ = {
+		28F828E91C4B714D00330CF4 /* Build configuration list for PBXNativeTarget "NotchKitExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				28F828EA1C4B714D00330CF4 /* Debug */,
@@ -422,7 +422,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		28F828EC1C4B714D00330CF4 /* Build configuration list for PBXNativeTarget "NotchlessExampleUITests" */ = {
+		28F828EC1C4B714D00330CF4 /* Build configuration list for PBXNativeTarget "NotchKitExampleUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				28F828ED1C4B714D00330CF4 /* Debug */,

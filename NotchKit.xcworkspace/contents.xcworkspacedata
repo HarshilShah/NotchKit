@@ -2,9 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Notchless.xcodeproj">
+      location = "group:NotchKit.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Example/NotchlessExample.xcodeproj">
+      location = "group:Example/NotchKitExample.xcodeproj">
    </FileRef>
 </Workspace>

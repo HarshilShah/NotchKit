@@ -1,13 +1,13 @@
 //
 //  ViewController.swift
-//  NotchlessExample
+//  NotchKitExample
 //
 //  Created by Harshil Shah on 16/09/17.
 //  Copyright © 2017 Harshil Shah. All rights reserved.
 //
 
 import UIKit
-import Notchless
+import NotchKit
 
 class ViewController: UIViewController {
 

@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		287D0A6E1C4B73BD004566D6 /* NotchlessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287D0A6D1C4B73BD004566D6 /* NotchlessTests.swift */; };
-		28F828811C494B2C00330CF4 /* Notchless.h in Headers */ = {isa = PBXBuildFile; fileRef = 28F828801C494B2C00330CF4 /* Notchless.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		28F828881C494B2C00330CF4 /* Notchless.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28F8287D1C494B2C00330CF4 /* Notchless.framework */; };
+		287D0A6E1C4B73BD004566D6 /* NotchKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287D0A6D1C4B73BD004566D6 /* NotchKitTests.swift */; };
+		28F828811C494B2C00330CF4 /* NotchKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 28F828801C494B2C00330CF4 /* NotchKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		28F828881C494B2C00330CF4 /* NotchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28F8287D1C494B2C00330CF4 /* NotchKit.framework */; };
 		E8095D651F6D56830006AC4B /* UIScreen+iPhoneX.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8095D641F6D56830006AC4B /* UIScreen+iPhoneX.swift */; };
 		E8D067591F6D2927003B4E5D /* Corner.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D067581F6D2927003B4E5D /* Corner.swift */; };
 		E8D0675C1F6D295D003B4E5D /* CGRect+Corners.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D0675B1F6D295D003B4E5D /* CGRect+Corners.swift */; };
 		E8D0675E1F6D297A003B4E5D /* CGRect+InitWithCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D0675D1F6D297A003B4E5D /* CGRect+InitWithCorners.swift */; };
 		E8D067601F6D2991003B4E5D /* CGRect+Insets.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D0675F1F6D2991003B4E5D /* CGRect+Insets.swift */; };
 		E8D067631F6D2A1F003B4E5D /* CornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D067621F6D2A1F003B4E5D /* CornerView.swift */; };
-		E8D067651F6D2CA0003B4E5D /* NotchlessWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D067641F6D2CA0003B4E5D /* NotchlessWindow.swift */; };
+		E8D067651F6D2CA0003B4E5D /* NotchKitWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D067641F6D2CA0003B4E5D /* NotchKitWindow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,16 +25,16 @@
 			containerPortal = 28F828741C494B2C00330CF4 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 28F8287C1C494B2C00330CF4;
-			remoteInfo = Notchless;
+			remoteInfo = NotchKit;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		287D0A6D1C4B73BD004566D6 /* NotchlessTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotchlessTests.swift; path = Tests/NotchlessTests.swift; sourceTree = SOURCE_ROOT; };
-		28F8287D1C494B2C00330CF4 /* Notchless.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Notchless.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		28F828801C494B2C00330CF4 /* Notchless.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Notchless.h; sourceTree = "<group>"; };
+		287D0A6D1C4B73BD004566D6 /* NotchKitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotchKitTests.swift; path = Tests/NotchKitTests.swift; sourceTree = SOURCE_ROOT; };
+		28F8287D1C494B2C00330CF4 /* NotchKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NotchKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		28F828801C494B2C00330CF4 /* NotchKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotchKit.h; sourceTree = "<group>"; };
 		28F828821C494B2C00330CF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		28F828871C494B2C00330CF4 /* NotchlessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotchlessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		28F828871C494B2C00330CF4 /* NotchKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotchKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28F8288E1C494B2C00330CF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8095D641F6D56830006AC4B /* UIScreen+iPhoneX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+iPhoneX.swift"; sourceTree = "<group>"; };
 		E8D067581F6D2927003B4E5D /* Corner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Corner.swift; sourceTree = "<group>"; };
@@ -42,7 +42,7 @@
 		E8D0675D1F6D297A003B4E5D /* CGRect+InitWithCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+InitWithCorners.swift"; sourceTree = "<group>"; };
 		E8D0675F1F6D2991003B4E5D /* CGRect+Insets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Insets.swift"; sourceTree = "<group>"; };
 		E8D067621F6D2A1F003B4E5D /* CornerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerView.swift; sourceTree = "<group>"; };
-		E8D067641F6D2CA0003B4E5D /* NotchlessWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchlessWindow.swift; sourceTree = "<group>"; };
+		E8D067641F6D2CA0003B4E5D /* NotchKitWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchKitWindow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28F828881C494B2C00330CF4 /* Notchless.framework in Frameworks */,
+				28F828881C494B2C00330CF4 /* NotchKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,8 +76,8 @@
 		28F8287E1C494B2C00330CF4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				28F8287D1C494B2C00330CF4 /* Notchless.framework */,
-				28F828871C494B2C00330CF4 /* NotchlessTests.xctest */,
+				28F8287D1C494B2C00330CF4 /* NotchKit.framework */,
+				28F828871C494B2C00330CF4 /* NotchKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -86,7 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				28F8288E1C494B2C00330CF4 /* Info.plist */,
-				287D0A6D1C4B73BD004566D6 /* NotchlessTests.swift */,
+				287D0A6D1C4B73BD004566D6 /* NotchKitTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -94,11 +94,11 @@
 		28F828971C494B4200330CF4 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				E8D067641F6D2CA0003B4E5D /* NotchlessWindow.swift */,
+				E8D067641F6D2CA0003B4E5D /* NotchKitWindow.swift */,
 				E8D067621F6D2A1F003B4E5D /* CornerView.swift */,
 				E8D0675A1F6D2939003B4E5D /* Types */,
 				E8D067611F6D29A5003B4E5D /* Extensions */,
-				28F828801C494B2C00330CF4 /* Notchless.h */,
+				28F828801C494B2C00330CF4 /* NotchKit.h */,
 				28F828821C494B2C00330CF4 /* Info.plist */,
 			);
 			path = Sources;
@@ -130,16 +130,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28F828811C494B2C00330CF4 /* Notchless.h in Headers */,
+				28F828811C494B2C00330CF4 /* NotchKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		28F8287C1C494B2C00330CF4 /* Notchless */ = {
+		28F8287C1C494B2C00330CF4 /* NotchKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 28F828911C494B2C00330CF4 /* Build configuration list for PBXNativeTarget "Notchless" */;
+			buildConfigurationList = 28F828911C494B2C00330CF4 /* Build configuration list for PBXNativeTarget "NotchKit" */;
 			buildPhases = (
 				28F828781C494B2C00330CF4 /* Sources */,
 				28F828791C494B2C00330CF4 /* Frameworks */,
@@ -150,14 +150,14 @@
 			);
 			dependencies = (
 			);
-			name = Notchless;
-			productName = Notchless;
-			productReference = 28F8287D1C494B2C00330CF4 /* Notchless.framework */;
+			name = NotchKit;
+			productName = NotchKit;
+			productReference = 28F8287D1C494B2C00330CF4 /* NotchKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		28F828861C494B2C00330CF4 /* NotchlessTests */ = {
+		28F828861C494B2C00330CF4 /* NotchKitTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 28F828941C494B2C00330CF4 /* Build configuration list for PBXNativeTarget "NotchlessTests" */;
+			buildConfigurationList = 28F828941C494B2C00330CF4 /* Build configuration list for PBXNativeTarget "NotchKitTests" */;
 			buildPhases = (
 				28F828831C494B2C00330CF4 /* Sources */,
 				28F828841C494B2C00330CF4 /* Frameworks */,
@@ -168,9 +168,9 @@
 			dependencies = (
 				28F8288A1C494B2C00330CF4 /* PBXTargetDependency */,
 			);
-			name = NotchlessTests;
-			productName = NotchlessTests;
-			productReference = 28F828871C494B2C00330CF4 /* NotchlessTests.xctest */;
+			name = NotchKitTests;
+			productName = NotchKitTests;
+			productReference = 28F828871C494B2C00330CF4 /* NotchKitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -192,7 +192,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 28F828771C494B2C00330CF4 /* Build configuration list for PBXProject "Notchless" */;
+			buildConfigurationList = 28F828771C494B2C00330CF4 /* Build configuration list for PBXProject "NotchKit" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -204,8 +204,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				28F8287C1C494B2C00330CF4 /* Notchless */,
-				28F828861C494B2C00330CF4 /* NotchlessTests */,
+				28F8287C1C494B2C00330CF4 /* NotchKit */,
+				28F828861C494B2C00330CF4 /* NotchKitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -235,7 +235,7 @@
 				E8D067631F6D2A1F003B4E5D /* CornerView.swift in Sources */,
 				E8D0675E1F6D297A003B4E5D /* CGRect+InitWithCorners.swift in Sources */,
 				E8D0675C1F6D295D003B4E5D /* CGRect+Corners.swift in Sources */,
-				E8D067651F6D2CA0003B4E5D /* NotchlessWindow.swift in Sources */,
+				E8D067651F6D2CA0003B4E5D /* NotchKitWindow.swift in Sources */,
 				E8D067591F6D2927003B4E5D /* Corner.swift in Sources */,
 				E8095D651F6D56830006AC4B /* UIScreen+iPhoneX.swift in Sources */,
 				E8D067601F6D2991003B4E5D /* CGRect+Insets.swift in Sources */,
@@ -246,7 +246,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				287D0A6E1C4B73BD004566D6 /* NotchlessTests.swift in Sources */,
+				287D0A6E1C4B73BD004566D6 /* NotchKitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,7 +255,7 @@
 /* Begin PBXTargetDependency section */
 		28F8288A1C494B2C00330CF4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 28F8287C1C494B2C00330CF4 /* Notchless */;
+			target = 28F8287C1C494B2C00330CF4 /* NotchKit */;
 			targetProxy = 28F828891C494B2C00330CF4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -367,7 +367,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.harshilshah.Notchless;
+				PRODUCT_BUNDLE_IDENTIFIER = com.harshilshah.NotchKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -387,7 +387,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.harshilshah.Notchless;
+				PRODUCT_BUNDLE_IDENTIFIER = com.harshilshah.NotchKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -401,7 +401,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.harshilshah.NotchlessTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.harshilshah.NotchKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -415,7 +415,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.harshilshah.NotchlessTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.harshilshah.NotchKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -424,7 +424,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		28F828771C494B2C00330CF4 /* Build configuration list for PBXProject "Notchless" */ = {
+		28F828771C494B2C00330CF4 /* Build configuration list for PBXProject "NotchKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				28F8288F1C494B2C00330CF4 /* Debug */,
@@ -433,7 +433,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		28F828911C494B2C00330CF4 /* Build configuration list for PBXNativeTarget "Notchless" */ = {
+		28F828911C494B2C00330CF4 /* Build configuration list for PBXNativeTarget "NotchKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				28F828921C494B2C00330CF4 /* Debug */,
@@ -442,7 +442,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		28F828941C494B2C00330CF4 /* Build configuration list for PBXNativeTarget "NotchlessTests" */ = {
+		28F828941C494B2C00330CF4 /* Build configuration list for PBXNativeTarget "NotchKitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				28F828951C494B2C00330CF4 /* Debug */,

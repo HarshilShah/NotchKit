@@ -1,6 +1,6 @@
 //
-//  NotchlessExampleUITests.swift
-//  NotchlessExampleUITests
+//  NotchKitExampleUITests.swift
+//  NotchKitExampleUITests
 //
 //  Created by Harshil Shah on 16/09/17.
 //  Copyright © 2017 Harshil Shah. All rights reserved.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class NotchlessExampleUITests: XCTestCase {
+class NotchKitExampleUITests: XCTestCase {
 
     override func setUp() {
         super.setUp()

@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "28F8287C1C494B2C00330CF4"
-               BuildableName = "Notchless.framework"
-               BlueprintName = "Notchless"
-               ReferencedContainer = "container:Notchless.xcodeproj">
+               BuildableName = "NotchKit.framework"
+               BlueprintName = "NotchKit"
+               ReferencedContainer = "container:NotchKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "28F828861C494B2C00330CF4"
-               BuildableName = "NotchlessTests.xctest"
-               BlueprintName = "NotchlessTests"
-               ReferencedContainer = "container:Notchless.xcodeproj">
+               BuildableName = "NotchKitTests.xctest"
+               BlueprintName = "NotchKitTests"
+               ReferencedContainer = "container:NotchKit.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "28F8287C1C494B2C00330CF4"
-            BuildableName = "Notchless.framework"
-            BlueprintName = "Notchless"
-            ReferencedContainer = "container:Notchless.xcodeproj">
+            BuildableName = "NotchKit.framework"
+            BlueprintName = "NotchKit"
+            ReferencedContainer = "container:NotchKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -65,9 +65,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "28F8287C1C494B2C00330CF4"
-            BuildableName = "Notchless.framework"
-            BlueprintName = "Notchless"
-            ReferencedContainer = "container:Notchless.xcodeproj">
+            BuildableName = "NotchKit.framework"
+            BlueprintName = "NotchKit"
+            ReferencedContainer = "container:NotchKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -83,9 +83,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "28F8287C1C494B2C00330CF4"
-            BuildableName = "Notchless.framework"
-            BlueprintName = "Notchless"
-            ReferencedContainer = "container:Notchless.xcodeproj">
+            BuildableName = "NotchKit.framework"
+            BlueprintName = "NotchKit"
+            ReferencedContainer = "container:NotchKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

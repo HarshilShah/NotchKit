@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Notchless.xcodeproj">
+      location = "self:NotchKit.xcodeproj">
    </FileRef>
 </Workspace>

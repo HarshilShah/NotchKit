@@ -1,6 +1,6 @@
 //
 //  CGRect+Insets.swift
-//  Notchless
+//  NotchKit
 //
 //  Created by Harshil Shah on 16/09/17.
 //

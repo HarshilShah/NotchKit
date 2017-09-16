@@ -1,13 +1,13 @@
 //
 //  AppDelegate.swift
-//  NotchlessExample
+//  NotchKitExample
 //
 //  Created by Harshil Shah on 16/09/17.
 //  Copyright © 2017 Harshil Shah. All rights reserved.
 //
 
 import UIKit
-import Notchless
+import NotchKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        window = NotchlessWindow(frame: UIScreen.main.bounds)
+        window = NotchKitWindow(frame: UIScreen.main.bounds)
         let rootViewController = ViewController()
         window?.rootViewController = rootViewController
         window?.backgroundColor = .black

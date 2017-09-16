@@ -1,15 +1,15 @@
 //
-//  NotchlessTests.swift
-//  NotchlessTests
+//  NotchKitTests.swift
+//  NotchKitTests
 //
 //  Created by Harshil Shah on 16/09/17.
 //  Copyright © 2017 Harshil Shah. All rights reserved.
 //
 
 import XCTest
-@testable import Notchless
+@testable import NotchKit
 
-class NotchlessTests: XCTestCase {
+class NotchKitTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
