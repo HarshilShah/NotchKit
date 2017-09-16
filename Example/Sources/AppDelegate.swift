@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Notchless
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        window = NotchlessWindow(frame: UIScreen.main.bounds)
+        let rootViewController = ViewController()
+        window?.rootViewController = rootViewController
+        window?.backgroundColor = .black
+        window?.makeKeyAndVisible()
         return true
     }
 
