@@ -14,6 +14,7 @@
 		E83663191F6D626000259B78 /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = E83663151F6D626000259B78 /* LICENSE.md */; };
 		E836631B1F6D626000259B78 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = E83663171F6D626000259B78 /* CHANGELOG.md */; };
 		E836631C1F6D626000259B78 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E83663181F6D626000259B78 /* README.md */; };
+		E836631F1F6D632D00259B78 /* NotchKit.podspec in Resources */ = {isa = PBXBuildFile; fileRef = E836631E1F6D632D00259B78 /* NotchKit.podspec */; };
 		E8D067591F6D2927003B4E5D /* Corner.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D067581F6D2927003B4E5D /* Corner.swift */; };
 		E8D0675C1F6D295D003B4E5D /* CGRect+Corners.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D0675B1F6D295D003B4E5D /* CGRect+Corners.swift */; };
 		E8D0675E1F6D297A003B4E5D /* CGRect+InitWithCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D0675D1F6D297A003B4E5D /* CGRect+InitWithCorners.swift */; };
@@ -43,6 +44,7 @@
 		E83663151F6D626000259B78 /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 		E83663171F6D626000259B78 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 		E83663181F6D626000259B78 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E836631E1F6D632D00259B78 /* NotchKit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NotchKit.podspec; sourceTree = "<group>"; };
 		E8D067581F6D2927003B4E5D /* Corner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Corner.swift; sourceTree = "<group>"; };
 		E8D0675B1F6D295D003B4E5D /* CGRect+Corners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Corners.swift"; sourceTree = "<group>"; };
 		E8D0675D1F6D297A003B4E5D /* CGRect+InitWithCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+InitWithCorners.swift"; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 			children = (
 				E83663181F6D626000259B78 /* README.md */,
 				E83663171F6D626000259B78 /* CHANGELOG.md */,
+				E836631E1F6D632D00259B78 /* NotchKit.podspec */,
 				E83663151F6D626000259B78 /* LICENSE.md */,
 			);
 			path = "Supporting Files";
@@ -232,6 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E836631F1F6D632D00259B78 /* NotchKit.podspec in Resources */,
 				E836631B1F6D626000259B78 /* CHANGELOG.md in Resources */,
 				E836631C1F6D626000259B78 /* README.md in Resources */,
 				E83663191F6D626000259B78 /* LICENSE.md in Resources */,
