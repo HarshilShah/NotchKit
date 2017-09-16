@@ -121,7 +121,7 @@
 				E836631E1F6D632D00259B78 /* NotchKit.podspec */,
 				E83663151F6D626000259B78 /* LICENSE.md */,
 			);
-			path = "Supporting Files";
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		E8D0675A1F6D2939003B4E5D /* Types */ = {
