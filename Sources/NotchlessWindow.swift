@@ -26,6 +26,17 @@ public final class NotchlessWindow: UIWindow {
         didSet { updateCornerRadii() }
     }
     
+    /// A Bool indicating whether bars are shown only on the iPhone X.
+    ///
+    /// When this property's value is true, black bars to cover the notch and
+    /// the home indicator are shown only on the iPhone X.
+    ///
+    /// When this property's value is false, black bars and curved corners are
+    /// shown on all devices
+    public var shouldShowBarsOnlyOniPhoneX = true {
+        didSet { layoutSubviews() }
+    }
+    
     public override var rootViewController: UIViewController? {
         didSet {
             updateRootViewController(from: oldValue, to: rootViewController)
@@ -159,6 +170,9 @@ public final class NotchlessWindow: UIWindow {
     
     private func updateCornerRadii() {
         let newCornerRadius: CGFloat = {
+            if shouldShowBarsOnlyOniPhoneX && !screen.isiPhoneX {
+                return 0
+            }
             
             switch cornerRadius {
                 
@@ -181,8 +195,16 @@ public final class NotchlessWindow: UIWindow {
     }
     
     private func setSafeAreaInsets(_ insets: UIEdgeInsets) {
+        let safeViewFrame: CGRect = {
+            if shouldShowBarsOnlyOniPhoneX && !screen.isiPhoneX {
+                return bounds
+            } else {
+                return bounds.insetBy(insets: insets)
+            }
+        }()
+        
         UIView.animate(withDuration: 0.1) { [unowned self] in
-            self.safeView.frame = self.bounds.insetBy(insets: insets)
+            self.safeView.frame = safeViewFrame
         }
     }
     
