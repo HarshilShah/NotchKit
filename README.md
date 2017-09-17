@@ -75,7 +75,25 @@ window = {
 }()
 ```
 
-And that's all, you're done! You can check the `Sources/NotchKitWindow.swift` file for some more customisation options.
+And that's all, you're done!
+
+## Customisation
+
+There are some customisation points offered in NotchKit.
+
+You can adjust these from any view or view controller belonging to the window, by simply calling the window as a `NotchKitWindow`, as follows:
+
+```swift
+(view.window as? NotchKitWindow)?.propertyToCustomise = valueYouWantToSet
+```
+
+### Target devices
+
+By default, NotchKit hides the status bar and home indicator on all devices. However if you choose you can limit this behaviour to just the iPhone X and have it do nothing on other devices by setting the `shouldShowBarsOnlyOniPhoneX` property to `true`.
+
+### Corner Radius
+
+You can customise the corner radius of the window, via the `.cornerRadius` property. This property is an enum and can either be `.standard`, which does all the maths for you to show an appropriate corner radius, or you can set a custom value by setting it to `.custom(n)`, where `n` is a custom corner radius of your choice.
 
 ## Author
 
