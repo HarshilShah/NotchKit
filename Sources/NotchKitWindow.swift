@@ -49,6 +49,12 @@ public final class NotchKitWindow: UIWindow {
     
     private let safeAreaInsetsKeyPath = "safeAreaInsets"
     
+    private var isiPhoneX: Bool {
+        return screen.nativeBounds.size == CGSize(width: 1125, height: 2436)
+    }
+    
+    // MARK:- View hierarchy
+    
     private let safeView = UIView()
     
     private let topBarView = UIView()
@@ -173,14 +179,14 @@ public final class NotchKitWindow: UIWindow {
     
     private func updateCornerRadii() {
         let newCornerRadius: CGFloat = {
-            if shouldShowBarsOnlyOniPhoneX && !screen.isiPhoneX {
+            if shouldShowBarsOnlyOniPhoneX && !isiPhoneX {
                 return 0
             }
             
             switch cornerRadius {
                 
             case .standard:
-                if screen.isiPhoneX {
+                if isiPhoneX {
                     return 22
                 } else {
                     return 8
@@ -199,7 +205,7 @@ public final class NotchKitWindow: UIWindow {
     
     private func setSafeAreaInsets(_ insets: UIEdgeInsets) {
         let safeViewFrame: CGRect = {
-            if shouldShowBarsOnlyOniPhoneX && !screen.isiPhoneX {
+            if shouldShowBarsOnlyOniPhoneX && !isiPhoneX {
                 return bounds
             } else {
                 return bounds.insetBy(insets: insets)

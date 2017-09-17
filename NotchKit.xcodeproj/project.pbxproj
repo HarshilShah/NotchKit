@@ -10,7 +10,6 @@
 		287D0A6E1C4B73BD004566D6 /* NotchKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287D0A6D1C4B73BD004566D6 /* NotchKitTests.swift */; };
 		28F828811C494B2C00330CF4 /* NotchKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 28F828801C494B2C00330CF4 /* NotchKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		28F828881C494B2C00330CF4 /* NotchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28F8287D1C494B2C00330CF4 /* NotchKit.framework */; };
-		E8095D651F6D56830006AC4B /* UIScreen+iPhoneX.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8095D641F6D56830006AC4B /* UIScreen+iPhoneX.swift */; };
 		E83663191F6D626000259B78 /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = E83663151F6D626000259B78 /* LICENSE.md */; };
 		E836631B1F6D626000259B78 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = E83663171F6D626000259B78 /* CHANGELOG.md */; };
 		E836631C1F6D626000259B78 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E83663181F6D626000259B78 /* README.md */; };
@@ -40,7 +39,6 @@
 		28F828821C494B2C00330CF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28F828871C494B2C00330CF4 /* NotchKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotchKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28F8288E1C494B2C00330CF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E8095D641F6D56830006AC4B /* UIScreen+iPhoneX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+iPhoneX.swift"; sourceTree = "<group>"; };
 		E83663151F6D626000259B78 /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 		E83663171F6D626000259B78 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 		E83663181F6D626000259B78 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -135,7 +133,6 @@
 		E8D067611F6D29A5003B4E5D /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				E8095D641F6D56830006AC4B /* UIScreen+iPhoneX.swift */,
 				E8D0675D1F6D297A003B4E5D /* CGRect+InitWithCorners.swift */,
 				E8D0675B1F6D295D003B4E5D /* CGRect+Corners.swift */,
 				E8D0675F1F6D2991003B4E5D /* CGRect+Insets.swift */,
@@ -261,7 +258,6 @@
 				E8D0675C1F6D295D003B4E5D /* CGRect+Corners.swift in Sources */,
 				E8D067651F6D2CA0003B4E5D /* NotchKitWindow.swift in Sources */,
 				E8D067591F6D2927003B4E5D /* Corner.swift in Sources */,
-				E8095D651F6D56830006AC4B /* UIScreen+iPhoneX.swift in Sources */,
 				E8D067601F6D2991003B4E5D /* CGRect+Insets.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
