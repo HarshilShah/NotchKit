@@ -1,4 +1,11 @@
-0.1.0 Release notes (16/9/2016)
+0.1.1 Release notes (17/9/2017)
+----
+
+- Fixed an issue where touches were being interception
+- Fixed a selector crash
+- Updated the ReadMe with customisation options and Apple's HIG recommendations
+
+0.1.0 Release notes (16/9/2017)
 ----
 
 Initial release
