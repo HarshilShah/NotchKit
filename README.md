@@ -105,6 +105,14 @@ NotchKit is available under the MIT license. See the LICENSE file for more info.
 
 ----
 
-P.S.: This was made mostly as a joke while I was debating different ways to handle the iPhone X
+P.S.: This was made mostly as a joke while I was debating different ways to handle the iPhone X.
 
- #EmbraceTheNotch
+Apple's updated [Human Interface Guidelines for the iPhone X](https://developer.apple.com/ios/human-interface-guidelines/overview/iphone-x) explicitly call this out:
+
+> **Don't mask or call special attention to key display features.** Don't attempt to hide the device's rounded corners, sensor housing, or indicator for accessing the Home screen by placing black bars at the top and bottom of the screen. Don't use visual adornments like brackets, bezels, shapes, or instructional text to call special attention to these areas either.
+
+I'm not sure if violating the HIG is often used as grounds for a rejection, however I wouldn't bet either way.
+
+It only took me a couple of days using the simulator to realise that embracing the notch is the way forward. My intention with open-sourcing this was to make it easier for others to reach that conclusion as well.
+
+#EmbraceTheNotch
