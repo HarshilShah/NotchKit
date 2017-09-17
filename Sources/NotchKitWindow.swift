@@ -87,6 +87,7 @@ public final class NotchKitWindow: UIWindow {
     }
     
     private func setup() {
+        safeView.isUserInteractionEnabled = false
         addSubview(safeView)
         
         barViews.forEach { bar in
