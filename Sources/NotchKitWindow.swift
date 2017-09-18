@@ -58,9 +58,9 @@ public final class NotchKitWindow: UIWindow {
     private let safeView = UIView()
     
     private let topBarView = UIView()
+    private let leftBarView = UIView()
+    private let rightBarView = UIView()
     private let bottomBarView = UIView()
-    private let leadingBarView = UIView()
-    private let trailingBarView = UIView()
     
     private let topLeftCorner = CornerView()
     private let topRightCorner = CornerView()
@@ -68,7 +68,7 @@ public final class NotchKitWindow: UIWindow {
     private let bottomRightCorner = CornerView()
     
     private var barViews: [UIView] {
-        return [topBarView, bottomBarView, leadingBarView, trailingBarView]
+        return [topBarView, leftBarView, rightBarView, bottomBarView]
     }
     
     private var cornerViews: [CornerView] {
@@ -105,23 +105,23 @@ public final class NotchKitWindow: UIWindow {
         NSLayoutConstraint.activate([
             topBarView.topAnchor.constraint(equalTo: topAnchor),
             topBarView.bottomAnchor.constraint(equalTo: safeView.topAnchor),
-            topBarView.leadingAnchor.constraint(equalTo: leadingAnchor),
-            topBarView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            topBarView.leftAnchor.constraint(equalTo: leftAnchor),
+            topBarView.rightAnchor.constraint(equalTo: rightAnchor),
+            
+            leftBarView.topAnchor.constraint(equalTo: topAnchor),
+            leftBarView.bottomAnchor.constraint(equalTo: bottomAnchor),
+            leftBarView.leftAnchor.constraint(equalTo: leftAnchor),
+            leftBarView.rightAnchor.constraint(equalTo: safeView.leftAnchor),
+            
+            rightBarView.topAnchor.constraint(equalTo: topAnchor),
+            rightBarView.bottomAnchor.constraint(equalTo: bottomAnchor),
+            rightBarView.leftAnchor.constraint(equalTo: safeView.rightAnchor),
+            rightBarView.rightAnchor.constraint(equalTo: rightAnchor),
             
             bottomBarView.topAnchor.constraint(equalTo: safeView.bottomAnchor),
             bottomBarView.bottomAnchor.constraint(equalTo: bottomAnchor),
-            bottomBarView.leadingAnchor.constraint(equalTo: leadingAnchor),
-            bottomBarView.trailingAnchor.constraint(equalTo: trailingAnchor),
-            
-            leadingBarView.topAnchor.constraint(equalTo: topAnchor),
-            leadingBarView.bottomAnchor.constraint(equalTo: bottomAnchor),
-            leadingBarView.leadingAnchor.constraint(equalTo: leadingAnchor),
-            leadingBarView.trailingAnchor.constraint(equalTo: safeView.leadingAnchor),
-            
-            trailingBarView.topAnchor.constraint(equalTo: topAnchor),
-            trailingBarView.bottomAnchor.constraint(equalTo: bottomAnchor),
-            trailingBarView.leadingAnchor.constraint(equalTo: safeView.trailingAnchor),
-            trailingBarView.trailingAnchor.constraint(equalTo: trailingAnchor)
+            bottomBarView.leftAnchor.constraint(equalTo: leftAnchor),
+            bottomBarView.rightAnchor.constraint(equalTo: rightAnchor)
         ])
         
         topLeftCorner.corner = .topLeft
@@ -137,16 +137,16 @@ public final class NotchKitWindow: UIWindow {
         
         NSLayoutConstraint.activate([
             topLeftCorner.topAnchor.constraint(equalTo: safeView.topAnchor),
-            topLeftCorner.leadingAnchor.constraint(equalTo: safeView.leadingAnchor),
+            topLeftCorner.leftAnchor.constraint(equalTo: safeView.leftAnchor),
             
             topRightCorner.topAnchor.constraint(equalTo: safeView.topAnchor),
-            topRightCorner.trailingAnchor.constraint(equalTo: safeView.trailingAnchor),
+            topRightCorner.rightAnchor.constraint(equalTo: safeView.rightAnchor),
             
             bottomLeftCorner.bottomAnchor.constraint(equalTo: safeView.bottomAnchor),
-            bottomLeftCorner.leadingAnchor.constraint(equalTo: safeView.leadingAnchor),
+            bottomLeftCorner.leftAnchor.constraint(equalTo: safeView.leftAnchor),
             
             bottomRightCorner.bottomAnchor.constraint(equalTo: safeView.bottomAnchor),
-            bottomRightCorner.trailingAnchor.constraint(equalTo: safeView.trailingAnchor)
+            bottomRightCorner.rightAnchor.constraint(equalTo: safeView.rightAnchor)
         ])
     }
     
