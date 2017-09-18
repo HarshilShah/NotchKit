@@ -19,6 +19,24 @@ public final class NotchKitWindow: UIWindow {
     
     // MARK:- Public variables
     
+    /// The edges of the screen to be masked
+    ///
+    /// Each of the edges works as follows:
+    /// - `.top`: Shows a bar underneath the status bar on all iPhones and iPads.
+    ///   This is the only property applicable to all devices; the remaining
+    ///   3 apply only to iPhone X
+    /// - `.left`: Shows a bar along the left edge of the screen when in
+    ///   landscape orientation. Only applicable for iPhone X
+    /// - `.right`: Shows a bar along the right edge of the screen when in
+    ///   landscape orientation. Only applicable for iPhone X
+    /// - `.bottom`: Shows a bar underneath the home indicator regardless of
+    ///   orientation. Only applicable for iPhone X
+    ///
+    /// The default value of this property is `.all`
+    public var maskedEdges: UIRectEdge = .all {
+        didSet { updateSafeAreaInsets() }
+    }
+    
     /// The corner radius for the rounded view. It can be set to a custom value,
     /// or to use the standard value which sets the corner radius appropriately
     /// for the screen size
@@ -172,7 +190,7 @@ public final class NotchKitWindow: UIWindow {
             return
         }
         
-        setSafeAreaInsets(view.safeAreaInsets)
+        updateSafeAreaInsets()
     }
     
     // MARK:- Private methods
@@ -203,12 +221,22 @@ public final class NotchKitWindow: UIWindow {
         }
     }
     
-    private func setSafeAreaInsets(_ insets: UIEdgeInsets) {
+    private func updateSafeAreaInsets() {
+        guard let insets = rootViewController?.view.safeAreaInsets else {
+            return
+        }
+        
+        let finalInsets = UIEdgeInsets(
+            top:    maskedEdges.contains(.top)    ? insets.top    : 0,
+            left:   maskedEdges.contains(.left)   ? insets.left   : 0,
+            bottom: maskedEdges.contains(.bottom) ? insets.bottom : 0,
+            right:  maskedEdges.contains(.right)  ? insets.right  : 0)
+        
         let safeViewFrame: CGRect = {
             if shouldShowBarsOnlyOniPhoneX && !isiPhoneX {
                 return bounds
             } else {
-                return bounds.insetBy(insets: insets)
+                return bounds.insetBy(insets: finalInsets)
             }
         }()
         
