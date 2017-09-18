@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import NotchKit
 
 class ViewController: UIViewController {
     

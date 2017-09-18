@@ -12,6 +12,7 @@
 		28F828D21C4B714D00330CF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F828D11C4B714D00330CF4 /* ViewController.swift */; };
 		28F828D71C4B714D00330CF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28F828D61C4B714D00330CF4 /* Assets.xcassets */; };
 		28F828DA1C4B714D00330CF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28F828D81C4B714D00330CF4 /* LaunchScreen.storyboard */; };
+		E81AA9131F6FBBB9003A1898 /* NotchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E8D0676B1F6D3F3D003B4E5D /* NotchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E8D0676A1F6D3F3D003B4E5D /* NotchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8D0676B1F6D3F3D003B4E5D /* NotchKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				E81AA9131F6FBBB9003A1898 /* NotchKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
