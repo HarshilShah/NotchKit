@@ -87,9 +87,13 @@ You can adjust these from any view or view controller belonging to the window, b
 (view.window as? NotchKitWindow)?.propertyToCustomise = valueYouWantToSet
 ```
 
-### Target devices
+### Target Devices
 
 By default, NotchKit hides the status bar and home indicator on all devices. However if you choose you can limit this behaviour to just the iPhone X and have it do nothing on other devices by setting the `shouldShowBarsOnlyOniPhoneX` property to `true`.
+
+### Masked Edges
+
+By default, NotchKit masks all edges where applicable. You can customise this behaviour using the `maskedEdges` property, which accepts a `UIRectEdge` object that specifies the edges you want to mask.
 
 ### Corner Radius
 

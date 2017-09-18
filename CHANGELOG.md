@@ -1,3 +1,9 @@
+0.2.0 Release notes (18/9/2017)
+----
+
+- Added the ability to customise which edges are masked
+- Fixed a crash which happened when on relaunching the example app
+
 0.1.1 Release notes (17/9/2017)
 ----
 
