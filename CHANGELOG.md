@@ -1,3 +1,8 @@
+0.3.0 Release notes (22/9/2017)
+----
+
+- Mask changes are now animated
+
 0.2.0 Release notes (18/9/2017)
 ----
 
