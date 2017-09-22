@@ -13,7 +13,7 @@ NotchKit is a simple way to hide the notch on the iPhone X, and create a card-li
 
 Here's what it looks like:
 
-![Demo](screenshot.png)
+![Demo](demo.gif)
 
 ## Requirements
 
