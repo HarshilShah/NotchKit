@@ -34,7 +34,7 @@ public final class NotchKitWindow: UIWindow {
     ///
     /// The default value of this property is `.all`
     public var maskedEdges: UIRectEdge = .all {
-        didSet { updateSafeAreaInsets() }
+        didSet { updateSafeAreaInsets(animated: true) }
     }
     
     /// The corner radius for the rounded view. It can be set to a custom value,
@@ -178,6 +178,7 @@ public final class NotchKitWindow: UIWindow {
         super.layoutSubviews()
         bringSubview(toFront: safeView)
         updateCornerRadii()
+        updateSafeAreaInsets()
     }
     
     // MARK:- Key value observation
@@ -221,7 +222,7 @@ public final class NotchKitWindow: UIWindow {
         }
     }
     
-    private func updateSafeAreaInsets() {
+    private func updateSafeAreaInsets(animated: Bool = false) {
         guard let insets = rootViewController?.view.safeAreaInsets else {
             return
         }
@@ -240,8 +241,11 @@ public final class NotchKitWindow: UIWindow {
             }
         }()
         
-        UIView.animate(withDuration: 0.1) { [unowned self] in
+        let duration = animated ? 0.3 : 0
+        
+        UIView.animate(withDuration: duration) { [unowned self] in
             self.safeView.frame = safeViewFrame
+            self.safeView.layoutIfNeeded()
         }
     }
     
