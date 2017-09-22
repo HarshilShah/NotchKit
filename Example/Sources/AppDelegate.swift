@@ -15,7 +15,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        window = NotchKitWindow(frame: UIScreen.main.bounds)
+        let notch = NotchKitWindow(frame: UIScreen.main.bounds)
+        notch.maskedEdges = []
+        window = notch
         let rootViewController = ViewController()
         window?.rootViewController = rootViewController
         window?.backgroundColor = .black
