@@ -9,7 +9,7 @@
 import UIKit
 
 @available(iOS 11, *)
-public final class NotchKitWindow: UIWindow {
+open class NotchKitWindow: UIWindow {
     
     // MARK:- Types
     
@@ -58,7 +58,7 @@ public final class NotchKitWindow: UIWindow {
         didSet { layoutSubviews() }
     }
     
-    public override var rootViewController: UIViewController? {
+    open override var rootViewController: UIViewController? {
         didSet {
             updateRootViewController(from: oldValue, to: rootViewController)
         }
@@ -106,7 +106,7 @@ public final class NotchKitWindow: UIWindow {
         setup()
     }
     
-    public override func awakeFromNib() {
+    open override func awakeFromNib() {
         super.awakeFromNib()
         setup()
     }
@@ -175,7 +175,7 @@ public final class NotchKitWindow: UIWindow {
     
     // MARK:- UIView methods
     
-    public override func layoutSubviews() {
+    open override func layoutSubviews() {
         super.layoutSubviews()
         bringSubview(toFront: safeView)
         updateCornerRadii()
@@ -184,7 +184,7 @@ public final class NotchKitWindow: UIWindow {
     
     // MARK:- Key value observation
     
-    public override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+    open override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         guard keyPath == safeAreaInsetsKeyPath,
               let view = object as? UIView,
               view.isEqual(rootViewController?.view)
