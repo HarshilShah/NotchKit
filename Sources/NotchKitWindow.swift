@@ -8,6 +8,7 @@
 
 import UIKit
 
+@available(iOS 11, *)
 public final class NotchKitWindow: UIWindow {
     
     // MARK:- Types
