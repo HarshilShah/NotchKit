@@ -39,8 +39,8 @@ class ViewController: UIViewController {
         NSLayoutConstraint.activate([
             label.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             label.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-            label.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 32),
-            label.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -32)
+            label.leadingAnchor.constraint(equalTo: view.safeLayoutGuideWithFallback.leadingAnchor, constant: 32),
+            label.trailingAnchor.constraint(equalTo: view.safeLayoutGuideWithFallback.trailingAnchor, constant: -32)
         ])
         
         toggle.addTarget(self, action: #selector(toggleWasToggled), for: .valueChanged)
@@ -58,8 +58,11 @@ class ViewController: UIViewController {
     
     @objc private func toggleWasToggled(_ toggle: UISwitch) {
         isNotchHidden = toggle.isOn
-        (self.view.window as? NotchKitWindow)?.maskedEdges = isNotchHidden ? [.top, .left, .right] : []
-        self.setNeedsStatusBarAppearanceUpdate()
+        
+        if #available(iOS 11, *) {
+            (self.view.window as? NotchKitWindow)?.maskedEdges = isNotchHidden ? [.top, .left, .right] : []
+            self.setNeedsStatusBarAppearanceUpdate()
+        }
     }
 
 }

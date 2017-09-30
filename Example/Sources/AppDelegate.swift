@@ -15,9 +15,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        let notch = NotchKitWindow(frame: UIScreen.main.bounds)
-        notch.maskedEdges = []
-        window = notch
+        window = {
+            if #available(iOS 11, *) {
+                let notch = NotchKitWindow(frame: UIScreen.main.bounds)
+                notch.maskedEdges = []
+                return notch
+            } else {
+                return UIWindow()
+            }
+        }()
+        
         let rootViewController = ViewController()
         window?.rootViewController = rootViewController
         window?.backgroundColor = .black
