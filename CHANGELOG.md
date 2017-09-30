@@ -1,3 +1,7 @@
+## 0.4.1 Release notes (30/9/2017)
+
+- Updated to Swift 4.0
+
 ## 0.4.0 Release notes (30/9/2017)
 ----
 

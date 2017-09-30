@@ -17,7 +17,7 @@ Here's what it looks like:
 
 ## Requirements
 
-- Swift 3
+- Swift 4
 - iOS 8
 
 ## Installation
