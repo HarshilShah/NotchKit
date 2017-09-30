@@ -12,6 +12,6 @@ Pod::Spec.new do |spec|
 
   spec.source           = { git: 'https://github.com/HarshilShah/NotchKit.git', tag: spec.version.to_s }
   spec.ios.source_files = 'Sources/**/*.{h,swift}'
-  spec.ios.deployment_target = '11.0'
+  spec.ios.deployment_target = '8.0'
   spec.ios.frameworks = 'UIKit'
 end
