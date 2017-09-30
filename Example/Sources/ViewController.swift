@@ -21,11 +21,11 @@ class ViewController: UIViewController {
         view.backgroundColor = .white
         
         let topText = NSMutableAttributedString(string: "[Insert your app here]\n\n", attributes: [
-            NSFontAttributeName: UIFont(name: "Menlo-Bold", size: 40) as Any
+            NSAttributedStringKey.font: UIFont(name: "Menlo-Bold", size: 40) as Any
         ])
         
         let switchText = NSAttributedString(string: "P.S.: Flip that switch\n\n", attributes: [
-            NSFontAttributeName: UIFont(name: "Menlo-Regular", size: 20) as Any
+            NSAttributedStringKey.font: UIFont(name: "Menlo-Regular", size: 20) as Any
         ])
         
         topText.append(switchText)
