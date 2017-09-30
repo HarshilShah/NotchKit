@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name             = 'NotchKit'
-  spec.version          = '0.3.0'
+  spec.version          = '0.4.0'
   spec.summary          = 'One line to hide the iPhone X notch'
   spec.description      = <<-DESC
                           A UIWindow subclass to limit your iOS apps to a roundrect frame

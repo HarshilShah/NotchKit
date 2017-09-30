@@ -1,3 +1,8 @@
+## 0.4.0 Release notes (30/9/2017)
+----
+
+- Lowered the target OS to iOS 8.0
+
 0.3.0 Release notes (22/9/2017)
 ----
 

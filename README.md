@@ -18,7 +18,7 @@ Here's what it looks like:
 ## Requirements
 
 - Swift 3
-- iOS 11
+- iOS 8
 
 ## Installation
 
