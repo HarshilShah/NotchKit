@@ -34,14 +34,14 @@ open class NotchKitWindow: UIWindow {
     ///   orientation. Only applicable for iPhone X
     ///
     /// The default value of this property is `.all`
-    @objc public var maskedEdges: UIRectEdge = .all {
+    @objc open var maskedEdges: UIRectEdge = .all {
         didSet { updateSafeAreaInsets(animated: true) }
     }
     
     /// The corner radius for the rounded view. It can be set to a custom value,
     /// or to use the standard value which sets the corner radius appropriately
     /// for the screen size
-    public var cornerRadius: CornerRadius = .standard {
+    open var cornerRadius: CornerRadius = .standard {
         didSet { updateCornerRadii() }
     }
     
@@ -54,7 +54,7 @@ open class NotchKitWindow: UIWindow {
     /// shown on all devices
     ///
     /// The default value of this property is `false`
-    public var shouldShowBarsOnlyOniPhoneX = false {
+    open var shouldShowBarsOnlyOniPhoneX = false {
         didSet { layoutSubviews() }
     }
     
@@ -251,13 +251,8 @@ open class NotchKitWindow: UIWindow {
     }
     
     private func updateRootViewController(from oldValue: UIViewController?, to newValue: UIViewController?) {
-        if let oldValue = oldValue {
-            oldValue.view.removeObserver(self, forKeyPath: safeAreaInsetsKeyPath)
-        }
-        
-        if let newValue = newValue {
-            newValue.view.addObserver(self, forKeyPath: safeAreaInsetsKeyPath, options: [.initial], context: nil)
-        }
+        oldValue?.view.removeObserver(self, forKeyPath: safeAreaInsetsKeyPath)
+        newValue?.view.addObserver(self, forKeyPath: safeAreaInsetsKeyPath, options: [.initial], context: nil)
     }
     
 }
