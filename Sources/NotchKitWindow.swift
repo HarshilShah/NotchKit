@@ -34,7 +34,7 @@ open class NotchKitWindow: UIWindow {
     ///   orientation. Only applicable for iPhone X
     ///
     /// The default value of this property is `.all`
-    public var maskedEdges: UIRectEdge = .all {
+    @objc public var maskedEdges: UIRectEdge = .all {
         didSet { updateSafeAreaInsets(animated: true) }
     }
     
