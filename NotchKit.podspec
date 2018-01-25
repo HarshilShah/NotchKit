@@ -10,6 +10,7 @@ Pod::Spec.new do |spec|
   spec.author           = { 'Harshil Shah' => 'harshilshah1910@me.com' }
   spec.social_media_url = 'https://twitter.com/HarshilShah1910'
 
+  spec.swift_version    = '4.0'
   spec.source           = { git: 'https://github.com/HarshilShah/NotchKit.git', tag: spec.version.to_s }
   spec.ios.source_files = 'Sources/**/*.{h,swift}'
   spec.ios.deployment_target = '8.0'
