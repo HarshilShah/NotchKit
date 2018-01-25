@@ -54,7 +54,7 @@ open class NotchKitWindow: UIWindow {
     /// shown on all devices
     ///
     /// The default value of this property is `false`
-    open var shouldShowBarsOnlyOniPhoneX = false {
+    @objc open var shouldShowBarsOnlyOniPhoneX = false {
         didSet { layoutSubviews() }
     }
     
